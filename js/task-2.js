@@ -1,18 +1,32 @@
+// function calcAverageCalories(days){
+  
+//   let totalCalories = 0;
+
+//   for (const day of days){
+//   totalCalories += day['calories'];
+//   }     
+//     if (totalCalories === 0){
+//       return 0;
+//     } else {
+//       return totalCalories / days.length;
+//     }  
+    
+// }
+
+// ===========================   2-й варіант  ======================
 function calcAverageCalories(days){
   
   let totalCalories = 0;
 
   for (const day of days){
-  totalCalories += day['calories'];
+  totalCalories += day.calories;
   }     
-    if (totalCalories === 0){
-      return 0;
-    } else {
-      return totalCalories / days.length;
-    }  
-    
+  return totalCalories === 0 ? 0 : totalCalories / days.length;
+     
 }
 
+
+// =================================================================
 
 
 
